@@ -1,0 +1,27 @@
+.sectionMovie1 .container{
+  border: 1px solid var(--black15);
+  border-radius: 12px;
+  & .genreopen{
+      background-color: var(--black10);
+      border: 1px solid var(--black15);
+      border-radius: 12px;
+      transition: 0.3s;
+      & h6{
+          color: var(--grey60);
+          background-color: var(--black8);
+          padding: 6px;
+          border: 1px solid var(--black15);
+          border-radius: 12px;
+      }
+      & img{
+        transition: 0.3s ease;
+      }
+  }
+  .genreopen:hover{
+    background-color: var(--black12);
+    box-shadow: 0 0 8px var(--black15);
+  }
+  .genreopen:hover img{
+    transform: scale(0.9);
+  }
+}

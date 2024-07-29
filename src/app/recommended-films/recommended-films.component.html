@@ -1,0 +1,21 @@
+<section class="pt-5"></section>
+<section class="sectionMovie1 pt-5 p-5">
+  <div class="container p-5">
+    <div class="title mb-5">
+      <h2>Recommended Films</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-12" *ngFor="let film of films">
+        <div class="recommend mb-4 ">
+          <a class="text-reset text-decoration-none" routerLink="/show/{{film.id}}">
+            <img [src]="film.poster" class="img-fluid" alt="{{ film.title }}">
+            <div class="card-body p-2">
+              <h5 class="card-title text-center">{{ film.title }}</h5>
+              <p class="card-text text-center">{{ film.release_date }}</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

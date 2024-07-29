@@ -1,0 +1,9 @@
+.col{
+  transition: 0.3s;
+}
+.col:hover{
+  filter: grayscale(0%) !important;
+}
+.row:hover>.col:not(:hover){
+  filter: grayscale(100%) !important;
+}

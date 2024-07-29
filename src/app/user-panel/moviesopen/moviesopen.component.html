@@ -1,0 +1,67 @@
+<section class="pt-5"></section>
+<section class="section1 pt-5 p-5">
+  <div class="container">
+    <div class="row">
+      <img src="{{film.image}}" class="img-fluid" alt="">
+      <div class="txt text-center">
+        <h4 class="fw-bold">{{film.title}}</h4>
+        <p>{{film.description}}</p>
+        <button class="btn btn-danger me-3"><i class="fa-solid fa-play pe-2"></i>Play Now</button>
+        <!-- <button class="btn btn-dark"><i class="fa-solid fa-plus"></i></button> -->
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section2 pt-5 p-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="lft">
+          <div class="box p-4">
+            <h3>Description</h3>
+            <p>{{film.description}}</p>
+          </div>
+          <div class="box p-4 mt-5">
+            <h3>Cast</h3>
+            <div class="cast d-flex">
+              {{film.actors}}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="rit box p-4">
+          <p><i class="fa-regular fa-calendar-days pe-2 mt-4"></i>Realesed Date</p>
+          <h6 class="p-0 m-0">{{film.release_date}}</h6>
+          <p><i class="fa-solid fa-language pe-2 mt-4"></i>Language</p>
+          <h6 class="p-0 m-0">English</h6>
+          <p><i class="fa-regular fa-star pe-2 mt-4"></i>Rating</p>
+          <h6 class="p-0 m-0">IMDB : <span class="text-danger">{{film.rating}}</span></h6>
+          <p><i class="fa-solid fa-table-cells-large pe-2 mt-4"></i>Gernes</p>
+          <h6 class="p-0 m-0">{{film.type}}</h6>
+          <p class="mt-4">Director</p>
+          <h6 class="p-0 m-0">{{film.director}}</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section5 pt-5 p-5 ">
+  <div class="container ">
+    <!-- <img src="assets/vendors/imgs/Image.png" class="img-fluid" alt=""> -->
+    <div class="row larg-image">
+      <div class="col-lg-6">
+        <div class="txt">
+          <h6>Start your free trial today!</h6>
+          <p>This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-6 text-end align-items-center">
+        <div class="butn">
+          <button class="btn btn-danger">Start Free Trial</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

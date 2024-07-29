@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row pt-3">
+    <div class="col" *ngFor="let genre of genres">
+      <a class="text-reset text-decoration-none" [routerLink]="['/genre', genre.id]"
+        [queryParams]="{ type: genre.name }">
+        <div class="box genre p-3">
+          <img src="{{genre.image}}" class="img-fluid" alt="">
+          <h6 class="mt-2">{{genre.name}}</h6>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

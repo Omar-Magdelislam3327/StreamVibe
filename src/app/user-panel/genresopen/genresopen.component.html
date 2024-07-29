@@ -1,0 +1,26 @@
+<section class="pt-5"></section>
+<section class="sectionMovie1 pt-5 p-5">
+  <div class="container p-5">
+    <div class="title">
+      <div class="txt">
+        <h3><span class="text-danger">{{genre.name}} </span>Films</h3>
+      </div>
+    </div>
+    <div class="row pt-3">
+      <div class="col-3" *ngFor="let film of filteredFilms">
+        <div class="genreopen p-3 mt-3">
+          <a routerLink="/show/{{film.id}}" class="text-reset text-decoration-none">
+            <img src="{{film.poster}}" class="img-fluid" alt="">
+            <div class="title">
+              <h5>{{film.title}}</h5>
+            </div>
+            <div class="txt d-flex justify-content-between align-items-center">
+              <h6 class="mt-2"><i class="fa-solid fa-clock pe-2"></i>{{film.duration}}</h6>
+              <h6 class="mt-2"><i class="fa-solid fa-eye"></i> {{film.views}}</h6>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

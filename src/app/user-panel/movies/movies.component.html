@@ -1,0 +1,90 @@
+<section class="pt-5"></section>
+<section class="sectionMovie1 pt-5 p-5">
+  <div class="container p-5">
+    <div class="title">
+      <div class="txt">
+        <h3>Our Genres</h3>
+      </div>
+    </div>
+    <app-genres></app-genres>
+
+    <div class="title pt-5">
+      <div class="txt">
+        <h3>New Releases</h3>
+      </div>
+    </div>
+    <div class="row pt-3">
+      <div class="col-lg-3 col-md-6 col-12" *ngFor="let film of newReleaseFilms">
+        <a class="text-reset text-decoration-none" routerLink="{{film.id}}">
+          <div class="box release p-3">
+            <img src="{{film.poster}}" class="img-fluid" alt="">
+            <div class="txt text-center">
+              <h6 class="mt-2">{{film.title}}</h6>
+              <h6 class="mt-2">{{ film.release_date }}</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="title pt-5">
+      <div class="txt">
+        <h3>Must - Watch Movies</h3>
+      </div>
+    </div>
+    <div class="row pt-3">
+      <div class="col-lg-3 col-md-6 col-12">
+        <a routerLink="/show/{{3}}" class="text-reset text-decoration-none">
+          <div class="box release p-3">
+            <img src="assets/vendors/imgs/dark-knight.jpg" class="img-fluid" alt="">
+            <div class="txt d-flex justify-content-between align-items-center">
+              <h6 class="mt-2"><i class="fa-solid fa-clock"></i> 2h 32min</h6>
+            </div>
+            <div class="txt d-flex justify-content-between align-items-center">
+              <h6 class="mt-2"> Action , Crime</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-6 col-12">
+        <a routerLink="/show/{{2}}" class="text-reset text-decoration-none">
+          <div class="box release p-3">
+            <img src="assets/vendors/imgs/godfather.jpg" class="img-fluid" alt="">
+            <div class="txt d-flex justify-content-between align-items-center">
+              <h6 class="mt-2"><i class="fa-solid fa-clock"></i> 2h 55min</h6>
+            </div>
+            <div class="txt d-flex justify-content-between align-items-center">
+              <h6 class="mt-2"> Drama , Crime</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-6 col-12">
+        <a routerLink="/show/{{33}}" class="text-reset text-decoration-none">
+          <div class="box release p-3">
+            <img src="assets/vendors/imgs/scarface.jpg" class="img-fluid" alt="">
+            <div class="txt d-flex justify-content-between align-items-center">
+              <h6 class="mt-2"><i class="fa-solid fa-clock"></i> 2h 50min</h6>
+            </div>
+            <div class="txt d-flex justify-content-between align-items-center">
+              <h6 class="mt-2"> Drama , Crime</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-6 col-12">
+        <a routerLink="/show/{{34}}" class="text-reset text-decoration-none">
+          <div class="box release p-3">
+            <img src="assets/vendors/imgs/ingloriues.jpg" class="img-fluid" alt="">
+            <div class="txt d-flex justify-content-between align-items-center">
+              <h6 class="mt-2"><i class="fa-solid fa-clock"></i> 2h 33min</h6>
+            </div>
+            <div class="txt d-flex justify-content-between align-items-center">
+              <h6 class="mt-2"> Adventure , War</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
